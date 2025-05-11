@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>тест</title>
+  <style>
+    body {
+      margin: 0;
+    }
+
+    .header {
+      background-color: rgb(45, 45, 45);
+      height: 100px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+    }
+
+    .logo {
+      background-color: transparent;
+      height: 60px;
+      width: 60px;
+      background-image: url(../photo/steam.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      margin-left: 150px;
+      margin-top: -10px;
+    }
+
+    .nav-content {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+      list-style: none;
+    }
+
+    .nav-content a {
+      color: rgb(255, 255, 255);
+      text-decoration: none;
+    }
+
+    .burger {
+      display: none;
+      position: relative;
+      background: yellow;
+      height: 40px;
+      width: 40px;
+      margin-left: 40px;
+      border: none;
+    }
+
+    .burger span {
+      position: absolute;
+      height: 3px;
+      width: 30px;
+      background-color: black;
+      left: 5px;
+    }
+
+    .burger span:nth-child(1) {
+      transform: translateY(10px);
+    }
+
+    .burger span:nth-child(3) {
+      transform: translateY(-10px);
+    }
+
+    @media (max-width: 769px) {
+      .header {
+        background-color: red;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="header">
+
+      <button class="burger">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="logo"></div>
+
+      <nav class="nav">
+        <ul class="nav-content">
+          <li><a href="#">Главная</a></li>
+          <li><a href="#">О нас</a></li>
+          <li><a href="#">Магазин</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+  </main>
+
+  <script src="js/goods.js"></script>
+</body>
+
+</html>
